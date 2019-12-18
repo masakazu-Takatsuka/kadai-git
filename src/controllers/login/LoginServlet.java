@@ -93,7 +93,7 @@ public class LoginServlet extends HttpServlet {
             // 認証できたらログイン状態にしてトップページへリダイレクト
             request.getSession().setAttribute("login_employee", e);
 
-            request.getSession().setAttribute("flush", "ログインしました");
+            request.getSession().setAttribute("flush", "ログインしました。");
             response.sendRedirect(request.getContextPath() + "/");
         }
     }
